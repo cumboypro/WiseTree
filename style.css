@@ -1,0 +1,98 @@
+:root {
+    --gray: gray;
+    --dark: black
+}
+
+* {
+    margin: 0;
+    padding: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yanone Kaffeesatz"
+}
+
+
+
+.home {
+    padding-inline: 30px;
+    padding-block: 30px;
+}
+
+.home__container .hero__container {
+    width: 500px;
+    margin-inline: auto;
+}
+
+.home__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.home__list {
+display: flex;
+gap: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.home__list-link{
+font-weight: 900;
+font-size: 30px;
+letter-spacing: -0.50px;
+color: var(--gray);
+transition: 0.4s;
+}
+
+.home__list-link.active {
+color: var(--gray);
+border-bottom: 2px solid var(--dark);
+padding-bottom: 10px;
+}
+
+.home__list-link:hover {
+    color: var(--dark);
+}
+
+
+.home__list-item {
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    padding-block: 70px;
+}
+
+
+.hero__container{
+position: relative;
+}
+
+
+.hero__image{
+    position: absolute;
+    top: 0.1;
+    right: 0;
+}
+
+
+.hero__title{
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -2.5;
+}
+
+.hero__desc {
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -2.5;
+}
